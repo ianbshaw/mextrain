@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>gamengine</OriginalElement>
+  <nodes>
+    <node x="197.58690476190483" y="80.0">gamengine.Domino</node>
+    <node x="97.26955266955241" y="750.0">gamengine.ComputerTurn</node>
+    <node x="177.09126984126982" y="340.0">gamengine.Hand</node>
+    <node x="433.94931457431437" y="220.0">gamengine.Train</node>
+    <node x="373.0064574314572" y="340.0">gamengine.Board</node>
+    <node x="299.03621933621906" y="220.0">gamengine.Boneyard</node>
+    <node x="458.7889971139969" y="580.0">gamengine.Round</node>
+    <node x="387.9318542568541" y="460.0">gamengine.Player</node>
+    <node x="35.09126984126982" y="460.0">gamengine.Combo</node>
+    <node x="70.93185425685408" y="580.0">gamengine.Computer</node>
+    <node x="218.92023809523818" y="580.0">gamengine.Turn</node>
+    <node x="161.58690476190483" y="0.0">gamengine.DominoInterface</node>
+    <node x="297.0195526695524" y="750.0">gamengine.BoardSetup</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="gamengine.Domino" target="gamengine.DominoInterface">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="gamengine.Computer" target="gamengine.Player">
+      <point x="48.0" y="-15.0" />
+      <point x="174.93185425685408" y="530.0" />
+      <point x="394.7889971139969" y="530.0" />
+      <point x="-41.14285714285717" y="15.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.77375" x="291.0" y="390.0" />
+  <SelectedNodes>
+    <node>gamengine.BoardSetup</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

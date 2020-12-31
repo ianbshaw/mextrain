@@ -1,0 +1,196 @@
+package ui.gui;
+
+import javafx.geometry.Pos;
+import javafx.scene.layout.Pane;
+import javafx.scene.layout.StackPane;
+import javafx.scene.paint.Color;
+import javafx.scene.shape.Circle;
+import javafx.scene.shape.Rectangle;
+
+/*Class that draws a single domino side*/
+public class DominoSideGui {
+
+    public static void drawDominoSide (int numPips, Pane dominoPane) {
+        StackPane sidePane = new StackPane();
+        Rectangle side = new Rectangle(25, 25, Color.WHITE);
+        side.setStroke(Color.BLACK);
+        sidePane.getChildren().add(side);
+        if (numPips == 1) {
+            Circle pip1 = new Circle(2);
+            sidePane.getChildren().add(pip1);
+        } else if (numPips == 2) {
+            Circle pip1 = new Circle(2);
+            Circle pip2 = new Circle( 2);
+            sidePane.getChildren().addAll(pip1, pip2);
+            StackPane.setAlignment(pip1, Pos.TOP_LEFT);
+            pip1.setTranslateX(5);
+            pip1.setTranslateY(5);
+            StackPane.setAlignment(pip2, Pos.BOTTOM_RIGHT);
+            pip2.setTranslateY(-5);
+            pip2.setTranslateX(-5);
+        } else if (numPips == 3) {
+            Circle pip1 = new Circle(2);
+            Circle pip2 = new Circle(2);
+            Circle pip3 = new Circle(2);
+            sidePane.getChildren().addAll(pip1, pip2, pip3);
+            StackPane.setAlignment(pip1, Pos.CENTER);
+            StackPane.setAlignment(pip2, Pos.TOP_LEFT);
+            pip2.setTranslateX(5);
+            pip2.setTranslateY(5);
+            StackPane.setAlignment(pip3, Pos.BOTTOM_RIGHT);
+            pip3.setTranslateY(-5);
+            pip3.setTranslateX(-5);
+        } else if (numPips == 4) {
+            Circle pip1 = new Circle(2);
+            Circle pip2 = new Circle(2);
+            Circle pip3 = new Circle(2);
+            Circle pip4 = new Circle(2);
+            sidePane.getChildren().addAll(pip1, pip2, pip3, pip4);
+            StackPane.setAlignment(pip1, Pos.TOP_RIGHT);
+            pip1.setTranslateX(-5);
+            pip1.setTranslateY(5);
+            StackPane.setAlignment(pip2, Pos.TOP_LEFT);
+            pip2.setTranslateX(5);
+            pip2.setTranslateY(5);
+            StackPane.setAlignment(pip3, Pos.BOTTOM_RIGHT);
+            pip3.setTranslateY(-5);
+            pip3.setTranslateX(-5);
+            StackPane.setAlignment(pip4, Pos.BOTTOM_LEFT);
+            pip4.setTranslateY(-5);
+            pip4.setTranslateX(5);
+        } else if (numPips == 5) {
+            Circle pip1 = new Circle(2);
+            Circle pip2 = new Circle(2);
+            Circle pip3 = new Circle(2);
+            Circle pip4 = new Circle(2);
+            Circle pip5 = new Circle(2);
+            sidePane.getChildren().addAll(pip1, pip2, pip3, pip4, pip5);
+            StackPane.setAlignment(pip1, Pos.TOP_RIGHT);
+            pip1.setTranslateX(-5);
+            pip1.setTranslateY(5);
+            StackPane.setAlignment(pip2, Pos.TOP_LEFT);
+            pip2.setTranslateX(5);
+            pip2.setTranslateY(5);
+            StackPane.setAlignment(pip3, Pos.BOTTOM_RIGHT);
+            pip3.setTranslateY(-5);
+            pip3.setTranslateX(-5);
+            StackPane.setAlignment(pip4, Pos.BOTTOM_LEFT);
+            pip4.setTranslateY(-5);
+            pip4.setTranslateX(5);
+            StackPane.setAlignment(pip5, Pos.CENTER);
+        } else if (numPips == 6) {
+            Circle pip1 = new Circle(2);
+            Circle pip2 = new Circle(2);
+            Circle pip3 = new Circle(2);
+            Circle pip4 = new Circle(2);
+            Circle pip5 = new Circle(2);
+            Circle pip6 = new Circle(2);
+            sidePane.getChildren().addAll(pip1, pip2, pip3, pip4, pip5, pip6);
+            StackPane.setAlignment(pip1, Pos.TOP_RIGHT);
+            pip1.setTranslateX(-5);
+            pip1.setTranslateY(5);
+            StackPane.setAlignment(pip2, Pos.TOP_LEFT);
+            pip2.setTranslateX(5);
+            pip2.setTranslateY(5);
+            StackPane.setAlignment(pip3, Pos.BOTTOM_RIGHT);
+            pip3.setTranslateY(-5);
+            pip3.setTranslateX(-5);
+            StackPane.setAlignment(pip4, Pos.BOTTOM_LEFT);
+            pip4.setTranslateY(-5);
+            pip4.setTranslateX(5);
+            StackPane.setAlignment(pip5, Pos.CENTER_LEFT);
+            pip5.setTranslateX(5);
+            StackPane.setAlignment(pip6, Pos.CENTER_RIGHT);
+            pip6.setTranslateX(-5);
+        } else if (numPips == 7) {
+            Circle pip1 = new Circle(2);
+            Circle pip2 = new Circle(2);
+            Circle pip3 = new Circle(2);
+            Circle pip4 = new Circle(2);
+            Circle pip5 = new Circle(2);
+            Circle pip6 = new Circle(2);
+            Circle pip7 = new Circle(2);
+            sidePane.getChildren().addAll(pip1, pip2, pip3, pip4, pip5, pip6, pip7);
+            StackPane.setAlignment(pip1, Pos.TOP_RIGHT);
+            pip1.setTranslateX(-5);
+            pip1.setTranslateY(5);
+            StackPane.setAlignment(pip2, Pos.TOP_LEFT);
+            pip2.setTranslateX(5);
+            pip2.setTranslateY(5);
+            StackPane.setAlignment(pip3, Pos.BOTTOM_RIGHT);
+            pip3.setTranslateY(-5);
+            pip3.setTranslateX(-5);
+            StackPane.setAlignment(pip4, Pos.BOTTOM_LEFT);
+            pip4.setTranslateY(-5);
+            pip4.setTranslateX(5);
+            StackPane.setAlignment(pip5, Pos.CENTER_LEFT);
+            pip5.setTranslateX(5);
+            StackPane.setAlignment(pip6, Pos.CENTER_RIGHT);
+            pip6.setTranslateX(-5);
+            StackPane.setAlignment(pip7, Pos.CENTER);
+        } else if (numPips == 8) {
+            Circle pip1 = new Circle(2);
+            Circle pip2 = new Circle(2);
+            Circle pip3 = new Circle(2);
+            Circle pip4 = new Circle(2);
+            Circle pip5 = new Circle(2);
+            Circle pip6 = new Circle(2);
+            Circle pip7 = new Circle(2);
+            Circle pip8 = new Circle(2);
+            sidePane.getChildren().addAll(pip1, pip2, pip3, pip4, pip5, pip6, pip7, pip8);
+            StackPane.setAlignment(pip1, Pos.TOP_RIGHT);
+            pip1.setTranslateX(-5);
+            pip1.setTranslateY(5);
+            StackPane.setAlignment(pip2, Pos.TOP_LEFT);
+            pip2.setTranslateX(5);
+            pip2.setTranslateY(5);
+            StackPane.setAlignment(pip3, Pos.BOTTOM_RIGHT);
+            pip3.setTranslateY(-5);
+            pip3.setTranslateX(-5);
+            StackPane.setAlignment(pip4, Pos.BOTTOM_LEFT);
+            pip4.setTranslateY(-5);
+            pip4.setTranslateX(5);
+            StackPane.setAlignment(pip5, Pos.CENTER_LEFT);
+            pip5.setTranslateX(5);
+            StackPane.setAlignment(pip6, Pos.CENTER_RIGHT);
+            pip6.setTranslateX(-5);
+            StackPane.setAlignment(pip7, Pos.TOP_CENTER);
+            pip7.setTranslateY(5);
+            StackPane.setAlignment(pip8, Pos.BOTTOM_CENTER);
+            pip8.setTranslateY(-5);
+        } else if (numPips == 9) {
+            Circle pip1 = new Circle(2);
+            Circle pip2 = new Circle(2);
+            Circle pip3 = new Circle(2);
+            Circle pip4 = new Circle(2);
+            Circle pip5 = new Circle(2);
+            Circle pip6 = new Circle(2);
+            Circle pip7 = new Circle(2);
+            Circle pip8 = new Circle(2);
+            Circle pip9 = new Circle(2);
+            sidePane.getChildren().addAll(pip1, pip2, pip3, pip4, pip5, pip6, pip7, pip8, pip9);
+            StackPane.setAlignment(pip1, Pos.TOP_RIGHT);
+            pip1.setTranslateX(-5);
+            pip1.setTranslateY(5);
+            StackPane.setAlignment(pip2, Pos.TOP_LEFT);
+            pip2.setTranslateX(5);
+            pip2.setTranslateY(5);
+            StackPane.setAlignment(pip3, Pos.BOTTOM_RIGHT);
+            pip3.setTranslateY(-5);
+            pip3.setTranslateX(-5);
+            StackPane.setAlignment(pip4, Pos.BOTTOM_LEFT);
+            pip4.setTranslateY(-5);
+            pip4.setTranslateX(5);
+            StackPane.setAlignment(pip5, Pos.CENTER_LEFT);
+            pip5.setTranslateX(5);
+            StackPane.setAlignment(pip6, Pos.CENTER_RIGHT);
+            pip6.setTranslateX(-5);
+            StackPane.setAlignment(pip7, Pos.TOP_CENTER);
+            pip7.setTranslateY(5);
+            StackPane.setAlignment(pip8, Pos.BOTTOM_CENTER);
+            pip8.setTranslateY(-5);
+            StackPane.setAlignment(pip9, Pos.CENTER);
+        }
+        dominoPane.getChildren().add(sidePane);
+    }
+}

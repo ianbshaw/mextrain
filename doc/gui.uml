@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>ui.gui</OriginalElement>
+  <nodes>
+    <node x="304.0" y="240.0">ui.gui.InitWindow</node>
+    <node x="70.75000000000001" y="0.0">ui.gui.DominoSideGui</node>
+    <node x="131.74074074074076" y="320.0">ui.gui.MexicanTrainGui</node>
+    <node x="86.75000000000001" y="80.0">ui.gui.DominoGui</node>
+    <node x="226.24074074074076" y="160.0">ui.gui.MarkerGui</node>
+    <node x="148.0" y="240.0">ui.gui.BoardWindow</node>
+    <node x="0.0" y="240.0">ui.gui.PlayWindow</node>
+    <node x="36.0" y="160.0">ui.gui.TrainGui</node>
+  </nodes>
+  <notes />
+  <edges />
+  <settings layout="Hierarchic Group" zoom="1.0" x="216.0" y="175.0" />
+  <SelectedNodes>
+    <node>ui.gui.InitWindow</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
